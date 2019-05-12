@@ -47,13 +47,14 @@ const growBtn = () => {
           <span className="hl hl-property"> transition:</span>
           <span className="hl hl-value"> all 0.2s ease-in-out;</span>
           <br />
-          <span className="hl hl-property">{`&:hover`} </span>
-          <span style={{ color: "#ae81ff" }}>{`{`}</span> <br />
-          <span className="hl hl-property"> {`transform:`}</span>
+        </div>
+        <span className="hl-bracket">{`}`}</span>
+        <br />
+        <span className="hl-attribute">{`button:hover `}</span>
+        <span className="hl-bracket">{`{`}</span> <br />
+        <div style={{ marginLeft: "20px" }}>
+          <span className="hl hl-property"> transform:</span>
           <span className="hl hl-value"> scale(1.1);</span>
-          <br />
-          <span style={{ color: "#ae81ff" }}>{`}`}</span>
-          <br />
         </div>
         <span className="hl-bracket">{`}`}</span>
       </div>

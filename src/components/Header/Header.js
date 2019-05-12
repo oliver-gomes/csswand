@@ -5,7 +5,7 @@ import logo from "../../logo.svg";
 import { css } from "emotion";
 
 import "antd/dist/antd.css";
-
+import cssWand from "../../css-wand.png";
 const Header = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Header = () => {
         style={{ padding: "100px 0px", paddingBottom: "200px" }}
       >
         <Col xs={24} md={12}>
-          <img src={logo} height="100" alt="logo" />
+          <img src={cssWand} height="100" alt="logo" />
         </Col>
         <Col xs={24} md={12}>
           <a
