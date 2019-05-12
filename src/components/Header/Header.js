@@ -1,10 +1,12 @@
 import React from "react";
+
 import { Row, Col, Icon } from "antd";
 import logo from "../../logo.svg";
-
 import { css } from "emotion";
 
 import "antd/dist/antd.css";
+
+
 const Header = () => {
   return (
     <div>
@@ -14,7 +16,7 @@ const Header = () => {
         style={{ padding: "100px 0px", paddingBottom: "200px" }}
       >
         <Col md={12}>
-          <img src={logo} height="100" />
+          <img src={logo} height="100" alt="logo" />
         </Col>
         <Col md={12}>
           <a
