@@ -21,7 +21,7 @@ const Header = () => {
           <img src={cssWand} height="100" alt="logo" />
         </Col>
         <Col xs={24} md={12}>
-          <Row justify="start" type="flex" align="middle">
+          <Row justify="start" type="flex" align="middle+-">
             <Col md={10} />
             <Col md={2}>
               <a
