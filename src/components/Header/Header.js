@@ -15,15 +15,26 @@ const Header = () => {
       <Row
         type="flex"
         align="middle"
-        style={{ padding: "100px 0px", paddingBottom: "200px" }}
+        style={{ padding: "100px 0px", paddingBottom: "100px" }}
       >
         <Col xs={24} md={12}>
           <img src={cssWand} height="100" alt="logo" />
         </Col>
         <Col xs={24} md={12}>
-          <Row justify="start" type="flex" align="middle">
+          <Row type="flex" align="middle">
             <Col md={10} />
-            <Col md={2}>
+            <Col
+              xs={24}
+              md={2}
+              className={css`
+                @media (max-width: 768px) {
+                   {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  }
+                }
+              `}
+            >
               <a
                 href="https://github.com/ant-design/ant-design"
                 className={css`
@@ -39,7 +50,7 @@ const Header = () => {
                 <Icon type="github" style={{ fontSize: "28px" }} />
               </a>
             </Col>
-            <Col md={2} align="left">
+            <Col xs={24} md={2}>
               <TwitterShareButton
                 url={"https://github.com/oliver-gomes"}
                 options={{ text: "#reactjs is awesome" }}
@@ -47,6 +58,17 @@ const Header = () => {
             </Col>
             <Col md={10} />
           </Row>
+        </Col>
+      </Row>
+      <Row style={{ padding: "2px 0px", paddingBottom: "100px" }}>
+        <Col
+          className={css`
+            /* font-weight: bold; */
+            font-size: 18px;
+            letter-spacing: 2px;
+          `}
+        >
+          Welcome to awesome CSSWAND!
         </Col>
       </Row>
     </div>

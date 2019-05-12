@@ -1,0 +1,13 @@
+@media (max-width: 576px) {
+    .column-space {
+        margin: 20px 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .column-space {
+        margin: 20px 0;
+
+    }
+}

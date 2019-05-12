@@ -3,6 +3,7 @@
     background-color: #292D3E;
     height: 100vh;
     color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .App-header {
@@ -20,12 +21,10 @@
     color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(360deg);
+
+@media (max-width: 768px) {
+    .App {
+        height: 170vh
     }
 }
