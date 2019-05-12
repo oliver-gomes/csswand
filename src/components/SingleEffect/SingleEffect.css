@@ -1,0 +1,57 @@
+.ant-modal-header {
+    border-bottom: 1px solid #1D9AF2
+}
+
+.ant-modal-content,
+.ant-modal-header {
+    background-color: #292D3E;
+    color: #fff
+}
+
+.ant-modal-body p,
+.ant-modal-title {
+    color: #fff
+}
+
+.ant-modal-footer {
+    border-top: 1px solid #1D9AF2
+}
+
+.ant-btn-ghost {
+    background-color: none;
+    border-color: #1D9AF2;
+    color: #1D9AF2;
+
+}
+
+
+.hl {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.hl-bracket {
+    color: #6bc8f8
+}
+
+.hl-class {
+    color: #c9a067
+}
+
+.hl-attribute {
+    color: #FF5572
+}
+
+.hl-property {
+    color: #7FC9C2
+}
+
+.hl-value {
+    color: #ae81ff
+}
+
+transition: all 0.2s ease-in-out !important;
+
+&:hover {
+    transform: scale(1.1) !important;
+}
