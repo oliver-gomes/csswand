@@ -22,7 +22,12 @@ import {
   opacityHtmlVariable,
   opacityCssVariable
 } from "../../effects/Opacity";
-import { rotate, rotateStyle } from "../../effects/Rotate30";
+import {
+  rotate,
+  rotateStyle,
+  rotateHtmlVariable,
+  rotateCssVariable
+} from "../../effects/Rotate30";
 import { squarecircle, squarecircleStyle } from "../../effects/SquaretoCircle";
 import { tdshadow, tdshadowStyle } from "../../effects/3DShadow";
 import { swing, swingStyle } from "../../effects/Swing";
@@ -62,7 +67,13 @@ export default class EffectBoard extends Component {
             />
           </Col>
           <Col xs={24} sm={24} md={2} className="column-space">
-            <SingleEffect Style={rotateStyle} Code={rotate()} Title="Rotate" />
+            <SingleEffect
+              cssVariable={rotateCssVariable}
+              htmlVariable={rotateHtmlVariable}
+              Style={rotateStyle}
+              Code={rotate()}
+              Title="Rotate"
+            />
           </Col>
           <Col xs={24} sm={24} md={2} className="column-space">
             <SingleEffect
