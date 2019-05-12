@@ -8,7 +8,8 @@
     "react": "^16.8.6",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-twitter-embed": "^2.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
