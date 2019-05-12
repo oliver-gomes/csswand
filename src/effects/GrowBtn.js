@@ -29,8 +29,8 @@ const growBtn = () => {
           <span className="hl hl-property"> background-color:</span>
           <span className="hl hl-value"> #292D3E;</span>
           <br />
-          <span className="hl hl-property">border-color:</span>
-          <span className="hl hl-value"> #1D9AF2;</span>
+          <span className="hl hl-property">border: </span>
+          <span className="hl hl-value"> 1px solid #1D9AF2;</span>
           <br />
           <span className="hl hl-property"> border-radius:</span>
           <span className="hl hl-value"> 4px;</span>
@@ -41,8 +41,11 @@ const growBtn = () => {
           <span className="hl hl-property">cursor:</span>
           <span className="hl hl-value"> pointer;</span>
           <br />
-          <span className="hl hl-property">border: </span>
-          <span className="hl hl-value"> 1px solid transparent;</span>
+          <span className="hl hl-property">height:</span>
+          <span className="hl hl-value">32px;</span>
+          <br />
+          <span className="hl hl-property">font-size:</span>
+          <span className="hl hl-value">14px;</span>
           <br />
           <span className="hl hl-property"> transition:</span>
           <span className="hl hl-value"> all 0.2s ease-in-out;</span>
@@ -73,15 +76,14 @@ const growHtmlVariable = `<button>Grow</button>`;
 
 const growCssVariable = `
 button {
-  border: 1px solid transparent;
+  color: #1D9AF2;
+  background-color: #292D3E;
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
   cursor: pointer;
   height: 32px;
-  padding: 0 15px;
   font-size: 14px;
-  border-radius: 4px;
-  background-color: #292D3E;
-  border-color: #1D9AF2;
-  color: #1D9AF2;
   transition: all 0.2s ease-in-out;
 }
 button:hover {
