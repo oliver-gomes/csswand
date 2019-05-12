@@ -6,7 +6,6 @@ import { css } from "emotion";
 
 import "antd/dist/antd.css";
 
-
 const Header = () => {
   return (
     <div>
@@ -15,10 +14,10 @@ const Header = () => {
         align="middle"
         style={{ padding: "100px 0px", paddingBottom: "200px" }}
       >
-        <Col md={12}>
+        <Col xs={24} md={12}>
           <img src={logo} height="100" alt="logo" />
         </Col>
-        <Col md={12}>
+        <Col xs={24} md={12}>
           <a
             href="https://github.com/ant-design/ant-design"
             className={css`
