@@ -29,8 +29,18 @@ import {
   rotateHtmlVariable,
   rotateCssVariable
 } from "../../effects/Rotate30";
-import { squarecircle, squarecircleStyle } from "../../effects/SquaretoCircle";
-import { tdshadow, tdshadowStyle } from "../../effects/3DShadow";
+import {
+  squarecircle,
+  squarecircleStyle,
+  squarecircleHtmlVariable,
+  squarecircleCssVariable
+} from "../../effects/SquaretoCircle";
+import {
+  tdshadow,
+  tdshadowStyle,
+  tdshadowHtmlVariable,
+  tdshadowCssVariable
+} from "../../effects/3DShadow";
 import { swing, swingStyle } from "../../effects/Swing";
 
 export default class EffectBoard extends Component {
@@ -78,6 +88,8 @@ export default class EffectBoard extends Component {
           </Col>
           <Col xs={24} sm={24} md={2} className="column-space">
             <SingleEffect
+              cssVariable={squarecircleCssVariable}
+              htmlVariable={squarecircleHtmlVariable}
               Style={squarecircleStyle}
               Code={squarecircle()}
               Title="Square to Circle"
@@ -85,6 +97,8 @@ export default class EffectBoard extends Component {
           </Col>
           <Col xs={24} sm={24} md={2} className="column-space">
             <SingleEffect
+              cssVariable={tdshadowCssVariable}
+              htmlVariable={tdshadowHtmlVariable}
               Style={tdshadowStyle}
               Code={tdshadow()}
               Title="Shadow"
