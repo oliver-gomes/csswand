@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+<p align="center">
+  <a href="http://ant.design">
+    <img width="200" src="https://github.com/oliver-gomes/csswand/blob/master/src/css-wand.png?raw=true">
+  </a>
+</p>
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
