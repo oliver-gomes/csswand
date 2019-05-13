@@ -68,7 +68,16 @@ const swing = () => {
         <div style={{ marginLeft: "20px" }}>
           <span className="hl hl-property"> 15% </span>
           <span className="hl-bracket">{`{`}</span> <br />
-          <span className="hl hl-value"> transform: translateX(5px);</span>
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: translateX(5px);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
+          <span className="hl hl-property">30% </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: translateX(-5px);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
       </div>
     </div>
