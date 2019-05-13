@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row, Col, Icon } from "antd";
+import { Row, Col } from "antd";
 import { css } from "emotion";
 
 import "antd/dist/antd.css";
@@ -35,6 +35,7 @@ const Header = () => {
               `}
             >
               <iframe
+                title="github button"
                 src="https://ghbtns.com/github-btn.html?user=oliver-gomes&repo=csswand&type=star&size=large"
                 frameborder="0"
                 scrolling="0"
