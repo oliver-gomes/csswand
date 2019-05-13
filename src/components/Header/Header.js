@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Row, Col, Icon } from "antd";
-import logo from "../../logo.svg";
 import { css } from "emotion";
 
 import "antd/dist/antd.css";
@@ -35,8 +34,16 @@ const Header = () => {
                 }
               `}
             >
-              <a
-                href="https://github.com/ant-design/ant-design"
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=oliver-gomes&repo=csswand&type=star&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="160px"
+                height="30px"
+              />
+
+              {/* <a
+                href="https://github.com/oliver-gomes/csswand"
                 className={css`
                   color: #fff;
                   opacity: 0.8;
@@ -48,7 +55,7 @@ const Header = () => {
                 `}
               >
                 <Icon type="github" style={{ fontSize: "28px" }} />
-              </a>
+              </a> */}
             </Col>
             <Col xs={24} md={2}>
               <TwitterShareButton
