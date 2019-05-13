@@ -53,7 +53,7 @@ const Header = () => {
             <Col xs={24} md={2}>
               <TwitterShareButton
                 url={"https://github.com/oliver-gomes"}
-                options={{ text: "#reactjs is awesome" }}
+                options={{ text: "#csswand is awesome" }}
               />
             </Col>
             <Col md={10} />
