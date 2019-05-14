@@ -41,7 +41,12 @@ import {
   tdshadowHtmlVariable,
   tdshadowCssVariable
 } from "../../effects/3DShadow";
-import { swing, swingStyle } from "../../effects/Swing";
+import {
+  swing,
+  swingStyle,
+  swingHtmlVariable,
+  swingCssVariable
+} from "../../effects/Swing";
 
 export default class EffectBoard extends Component {
   render() {
@@ -111,7 +116,13 @@ export default class EffectBoard extends Component {
         <Row style={{ marginTop: "50px", marginBottom: "20px" }}>
           <Col xs={0} sm={0} md={6} />
           <Col xs={24} sm={24} md={2} className="column-space">
-            <SingleEffect Style={swingStyle} Code={swing()} Title="Swing" />
+            <SingleEffect
+              cssVariable={swingCssVariable}
+              htmlVariable={swingHtmlVariable}
+              Style={swingStyle}
+              Code={swing()}
+              Title="Swing"
+            />
           </Col>
           <Col xs={24} sm={24} md={2} className="column-space" />
           <Col xs={24} sm={24} md={2} className="column-space" />
