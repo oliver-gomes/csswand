@@ -78,6 +78,30 @@ const swing = () => {
             <span className="hl hl-value"> transform: translateX(-5px);</span>
           </div>
           <span className="hl-bracket">{`}`}</span> <br />
+          <span className="hl hl-property">50% </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: translateX(3px);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
+          <span className="hl hl-property">65% </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value">transform: translateX(-3px);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
+          <span className="hl hl-property">80% </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: translateX(2px);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
+          <span className="hl hl-property">100% </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: translateX(0);</span>
+          </div>
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
       </div>
     </div>
@@ -119,4 +143,50 @@ const swingStyle = css`
   }
 `;
 
-export { swing, swingStyle };
+const swingHtmlVariable = `<button>Swing</button>`;
+
+const swingCssVariable = `
+button {
+  color: #1D9AF2;
+  background-color: #292D3E;
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+ animation: swing 1s ease;
+ animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+`;
+export { swing, swingStyle, swingHtmlVariable, swingCssVariable };
