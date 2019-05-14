@@ -47,6 +47,11 @@ import {
   swingHtmlVariable,
   swingCssVariable
 } from "../../effects/Swing";
+import { spinner1, spinner1Style } from "../../effects/Spinner1";
+import { spinner2, spinner2Style } from "../../effects/Spinner2";
+import { spinner3, spinner3Style } from "../../effects/Spinner3";
+import { spinner4, spinner4Style } from "../../effects/Spinner4";
+import { spinner5, spinner5Style } from "../../effects/Spinner5";
 
 export default class EffectBoard extends Component {
   render() {
@@ -124,11 +129,21 @@ export default class EffectBoard extends Component {
               Title="Swing"
             />
           </Col>
-          <Col xs={24} sm={24} md={2} className="column-space" />
-          <Col xs={24} sm={24} md={2} className="column-space" />
-          <Col xs={24} sm={24} md={2} className="column-space" />
-          <Col xs={24} sm={24} md={2} className="column-space" />
-          <Col xs={24} sm={24} md={2} className="column-space" />
+          <Col xs={24} sm={24} md={2} className="column-space">
+            <SingleEffect Style={spinner1Style} Code={spinner1()} />
+          </Col>
+          <Col xs={24} sm={24} md={2} className="column-space">
+            <SingleEffect Style={spinner2Style} Code={spinner2()} />
+          </Col>
+          <Col xs={24} sm={24} md={2} className="column-space">
+            <SingleEffect Style={spinner3Style} Code={spinner3()} />
+          </Col>
+          <Col xs={24} sm={24} md={2} className="column-space">
+            <SingleEffect Style={spinner4Style} Code={spinner4()} />
+          </Col>
+          <Col xs={24} sm={24} md={2} className="column-space">
+            <SingleEffect Style={spinner5Style} Code={spinner5()} />
+          </Col>
           <Col xs={0} sm={0} md={6} />
         </Row>
       </>
