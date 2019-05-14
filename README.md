@@ -10,6 +10,9 @@
 Hover your wand and use your magic spell to copy beautiful css
 </div>
 
+<img width="1000" src="https://github.com/oliver-gomes/csswand/blob/master/public/screen-1.png?raw=true" style="border-radius: 10px">
+<img width="1000" src="https://github.com/oliver-gomes/csswand/blob/master/public/screen-2.png?raw=true" style="border-radius: 10px">
+ 
 ## ✨ Features
 
 - An enterprise-class UI design system for web applications.
