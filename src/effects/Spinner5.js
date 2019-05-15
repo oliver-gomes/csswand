@@ -71,7 +71,7 @@ const spinner5Style = css`
 height: 40px;
 width: 40px;
 background: rgba(0, 0, 0, .4);
-border-top: 2px solid #fff;
+border-top: 2px solid #1D9AF2;
 border-radius: 50%;
 border-left:none;
 border-bottom:none;
