@@ -1,13 +1,20 @@
 @media (max-width: 576px) {
-    .column-space {
-        margin: 20px 0;
+    button {
+        color: red !important;
+    }
+}
 
+@media (max-width: 1560px) {
+    button {
+        color: red !important;
     }
 }
 
 @media (max-width: 768px) {
-    .column-space {
-        margin: 20px 0;
 
+
+    button {
+        margin: 20px 0;
+        color: red;
     }
 }

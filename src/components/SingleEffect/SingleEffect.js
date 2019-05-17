@@ -38,7 +38,7 @@ export default class SingleEffect extends Component {
           className={this.props.Style}
           onClick={this.showModal}
         >
-          {this.props.Title}
+          {this.props.Title === "Spinner" ? null : this.props.Title}
         </Button>
 
         <Modal

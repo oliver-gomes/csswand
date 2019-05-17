@@ -4,6 +4,7 @@
 
 .ant-modal-content,
 .ant-modal-header {
+    font-family: 'Fira Sans', sans-serif;
     background-color: #292D3E;
     color: #fff
 }

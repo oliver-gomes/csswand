@@ -4,7 +4,7 @@ import { Row, Col } from "antd";
 import { css } from "emotion";
 
 import "antd/dist/antd.css";
-import cssWand from "../../css-wand.png";
+import cssWand from "../../csswand.png";
 
 import { TwitterShareButton } from "react-twitter-embed";
 
