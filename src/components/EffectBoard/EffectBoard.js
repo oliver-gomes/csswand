@@ -138,14 +138,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={growCssVariable}
@@ -166,14 +165,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={shrinkCssVariable}
@@ -187,14 +185,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={opacityCssVariable}
@@ -208,14 +205,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={rotateCssVariable}
@@ -229,14 +225,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={squarecircleCssVariable}
@@ -251,14 +246,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={tdshadowCssVariable}
@@ -278,14 +272,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 3
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={swingCssVariable}
@@ -299,14 +292,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 2
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect
               cssVariable={spinner1CssVariable}
@@ -320,14 +312,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 2
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect Style={spinner2Style} Code={spinner2()} />
           </Col>
@@ -335,14 +326,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 2
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect Style={spinner3Style} Code={spinner3()} />
           </Col>
@@ -350,8 +340,7 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 2
                 ? css`
                     display: none;
@@ -359,7 +348,7 @@ export default class EffectBoard extends Component {
                 : css`
                     display: inline-block;
                   `
-            }
+            }`}
           >
             <SingleEffect Style={spinner4Style} Code={spinner4()} />
           </Col>
@@ -367,14 +356,13 @@ export default class EffectBoard extends Component {
             xs={24}
             sm={24}
             md={2}
-            className="column-space"
-            className={
+            className={`column-space ${
               this.state.value === 2
                 ? css`
                     display: none;
                   `
                 : null
-            }
+            }`}
           >
             <SingleEffect Style={spinner5Style} Code={spinner5()} />
           </Col>
