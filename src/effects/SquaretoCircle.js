@@ -84,10 +84,10 @@ button {
    height: 32px;
    font-size: 14px;
    transition: all 0.2s ease-in-out;
-}
-button:hover {
-  border-radius: 50%;
-}
+  }
+  button:hover {
+    border-radius: 50%;
+  }
 `;
 
 export {
