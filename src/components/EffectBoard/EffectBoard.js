@@ -56,7 +56,12 @@ import {
   spinner1HtmlVariable,
   spinner1CssVariable
 } from "../../effects/Spinner1";
-import { spinner2, spinner2Style } from "../../effects/Spinner2";
+import {
+  spinner2,
+  spinner2Style,
+  spinner2HtmlVariable,
+  spinner2CssVariable
+} from "../../effects/Spinner2";
 import { spinner3, spinner3Style } from "../../effects/Spinner3";
 import { spinner4, spinner4Style } from "../../effects/Spinner4";
 import { spinner5, spinner5Style } from "../../effects/Spinner5";
@@ -110,14 +115,14 @@ export default class EffectBoard extends Component {
               >
                 Loading
               </Radio>
-              <Radio
+              {/* <Radio
                 value={4}
                 className={css`
                   color: #fff;
                 `}
               >
                 D
-              </Radio>
+              </Radio> */}
             </RadioGroup>
           </Col>
         </Row>
@@ -329,7 +334,13 @@ export default class EffectBoard extends Component {
                 : null
             }
           >
-            <SingleEffect Style={spinner2Style} Code={spinner2()} />
+            <SingleEffect
+              cssVariable={spinner2CssVariable}
+              htmlVariable={spinner2HtmlVariable}
+              Style={spinner2Style}
+              Code={spinner2()}
+              Title="Spinner"
+            />
           </Col>
           <Col
             xs={24}

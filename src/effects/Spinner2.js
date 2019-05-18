@@ -9,7 +9,7 @@ const spinner2 = () => {
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-attribute">{`button`}</span>
         <span className="hl-bracket">{`>`}</span>
-        <span>{`spinner`}</span>
+
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-bracket">{`/`}</span>
         <span className="hl-attribute">{`button `}</span>
@@ -22,46 +22,44 @@ const spinner2 = () => {
         <span className="hl-attribute">{`button `}</span>
         <span className="hl-bracket">{`{`}</span> <br />
         <div style={{ marginLeft: "20px" }}>
-          <span className="hl hl-property"> color:</span>
-          <span className="hl hl-value"> #1D9AF2;</span>
+          <span className="hl hl-property"> height:</span>
+          <span className="hl hl-value"> 40px;</span>
           <br />
-          <span className="hl hl-property"> background-color:</span>
-          <span className="hl hl-value"> #292D3E;</span>
+          <span className="hl hl-property"> width:</span>
+          <span className="hl hl-value"> 40px;</span>
           <br />
-          <span className="hl hl-property">border: </span>
-          <span className="hl hl-value"> 1px solid #1D9AF2;</span>
+          <span className="hl hl-property">background: </span>
+          <span className="hl hl-value"> #151825;</span>
           <br />
           <span className="hl hl-property"> border-radius:</span>
-          <span className="hl hl-value"> 4px;</span>
+          <span className="hl hl-value"> 50%;</span>
           <br />
-          <span className="hl hl-property">padding: </span>
-          <span className="hl hl-value"> 0 15px;</span>
+          <span className="hl hl-property">border: </span>
+          <span className="hl hl-value"> 2px solid rgba(0, 0, 0, 0.4);</span>
           <br />
-          <span className="hl hl-property">cursor:</span>
-          <span className="hl hl-value"> pointer;</span>
+          <span className="hl hl-property"> border-top-color:</span>
+          <span className="hl hl-value"> #fff;</span>
           <br />
-          <span className="hl hl-property">height:</span>
-          <span className="hl hl-value">32px;</span>
+          <span className="hl hl-property">animation: </span>
+          <span className="hl hl-value">spinner1 600ms linear infinite;</span>
           <br />
-          <span className="hl hl-property">font-size:</span>
-          <span className="hl hl-value">14px;</span>
-          <br />
-          <span className="hl hl-property"> transition:</span>
-          <span className="hl hl-value"> all 0.2s ease-in-out;</span>
-          <br />
-          <span className="hl hl-property"> spinner:</span>
-          <span className="hl hl-value"> 0.5;</span>
-          <br />
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
-        <span className="hl-bracket">{`}`}</span>
-        <br />
-        <span className="hl-attribute">{`button:hover `}</span>
+        <span className="hl-attribute">{`@keyframes spinner2 `}</span>
         <span className="hl-bracket">{`{`}</span> <br />
         <div style={{ marginLeft: "20px" }}>
-          <span className="hl hl-property"> spinner:</span>
-          <span className="hl hl-value"> 1;</span>
+          <span className="hl hl-property"> to </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value"> transform: rotate(360deg);</span>
+          </div>
+          <span
+            className="hl-bracket"
+            style={{ marginLeft: "8px" }}
+          >{`}`}</span>{" "}
+          <br />
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
-        <span className="hl-bracket">{`}`}</span>
       </div>
     </div>
   );
@@ -83,4 +81,23 @@ const spinner2Style = css`
 }
 `;
 
-export { spinner2, spinner2Style };
+const spinner2HtmlVariable = `<button></button>`;
+
+const spinner2CssVariable = `
+button {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  animation: spinner2 600ms linear infinite;
+}
+
+@keyframes spinner2 {
+    to {
+      transform: rotate(360deg);
+    }
+}
+`;
+export { spinner2, spinner2Style, spinner2HtmlVariable, spinner2CssVariable };
