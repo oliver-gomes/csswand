@@ -1,6 +1,7 @@
 import React from "react";
 
-import cssWand from "../../css-wand.png";
+// import cssWand from "../../css-wand.png";
+import cssWand from "../../csswand.png";
 import { TwitterShareButton } from "react-twitter-embed";
 
 import "./Header.css";
