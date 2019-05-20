@@ -1,0 +1,14 @@
+.grid-header {
+  padding-top: 100px;
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+}
+
+.item2 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+}

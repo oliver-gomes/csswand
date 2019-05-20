@@ -4,6 +4,7 @@
   height: 100vh;
   color: #fff;
   font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 50px;
 }
 
 .App-header {
@@ -21,8 +22,8 @@
   color: #61dafb;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .App {
     height: 170vh;
   }
-}
+} */
