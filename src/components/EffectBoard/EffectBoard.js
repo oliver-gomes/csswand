@@ -102,28 +102,19 @@ export default class EffectBoard extends Component {
             >
               Loading
             </Radio>
-            <Radio
+
+            {/* <Radio
               value={4}
               className={css`
                 color: #fff;
               `}
             >
               D
-            </Radio>
+            </Radio> */}
           </RadioGroup>
         </div>
         {/* Row 1 */}
-        <div
-          className={`
-          grid
-            ${
-              this.state.value === 3
-                ? css`
-                    display: none !important;
-                  `
-                : null
-            }`}
-        >
+        <div className={`grid`}>
           <div
             className={`column-space ${
               this.state.value === 3
@@ -214,7 +205,7 @@ export default class EffectBoard extends Component {
               Style={squarecircleStyle}
               Code={squarecircle()}
               className="squaretocircle"
-              Title="Square to Circle"
+              Title="Shape"
             />
           </div>
           <div
@@ -234,10 +225,9 @@ export default class EffectBoard extends Component {
               Title="Shadow"
             />
           </div>
-        </div>
 
-        {/* Row 2 */}
-        <div className="grid mt-5">
+          {/* Row 2 */}
+          {/* <div className="grid mt-5"> */}
           <div
             className={`column-space ${
               this.state.value === 3
