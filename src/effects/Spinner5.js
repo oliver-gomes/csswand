@@ -9,7 +9,7 @@ const spinner5 = () => {
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-attribute">{`button`}</span>
         <span className="hl-bracket">{`>`}</span>
-        <span>{`spinner`}</span>
+
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-bracket">{`/`}</span>
         <span className="hl-attribute">{`button `}</span>
@@ -22,46 +22,50 @@ const spinner5 = () => {
         <span className="hl-attribute">{`button `}</span>
         <span className="hl-bracket">{`{`}</span> <br />
         <div style={{ marginLeft: "20px" }}>
-          <span className="hl hl-property"> color:</span>
-          <span className="hl hl-value"> #1D9AF2;</span>
+          <span className="hl hl-property"> height:</span>
+          <span className="hl hl-value"> 40px;</span>
           <br />
-          <span className="hl hl-property"> background-color:</span>
-          <span className="hl hl-value"> #292D3E;</span>
+          <span className="hl hl-property"> width:</span>
+          <span className="hl hl-value"> 40px;</span>
           <br />
-          <span className="hl hl-property">border: </span>
-          <span className="hl hl-value"> 1px solid #1D9AF2;</span>
+          <span className="hl hl-property">background: </span>
+          <span className="hl hl-value"> rgba(0, 0, 0, 0.4);</span>
           <br />
           <span className="hl hl-property"> border-radius:</span>
-          <span className="hl hl-value"> 4px;</span>
+          <span className="hl hl-value"> 50%;</span>
           <br />
-          <span className="hl hl-property">padding: </span>
-          <span className="hl hl-value"> 0 15px;</span>
+          <span className="hl hl-property">border-top: </span>
+          <span className="hl hl-value"> 2px solid #1D9AF2;</span>
           <br />
-          <span className="hl hl-property">cursor:</span>
-          <span className="hl hl-value"> pointer;</span>
+          <span className="hl hl-property"> border-right:</span>
+          <span className="hl hl-value"> 2px solid transparent;</span>
           <br />
-          <span className="hl hl-property">height:</span>
-          <span className="hl hl-value">32px;</span>
+          <span className="hl hl-property">border-bottom:</span>
+          <span className="hl hl-value">none;</span>
           <br />
-          <span className="hl hl-property">font-size:</span>
-          <span className="hl hl-value">14px;</span>
+          <span className="hl hl-property">border-left:</span>
+          <span className="hl hl-value">none;</span>
           <br />
-          <span className="hl hl-property"> transition:</span>
-          <span className="hl hl-value"> all 0.2s ease-in-out;</span>
+          <span className="hl hl-property">animation: </span>
+          <span className="hl hl-value">spinner5 700ms linear infinite;</span>
           <br />
-          <span className="hl hl-property"> spinner:</span>
-          <span className="hl hl-value"> 0.5;</span>
-          <br />
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
-        <span className="hl-bracket">{`}`}</span>
-        <br />
-        <span className="hl-attribute">{`button:hover `}</span>
+        <span className="hl-attribute">{`@keyframes spinner5 `}</span>
         <span className="hl-bracket">{`{`}</span> <br />
         <div style={{ marginLeft: "20px" }}>
-          <span className="hl hl-property"> spinner:</span>
-          <span className="hl hl-value"> 1;</span>
+          <span className="hl hl-property"> to </span>
+          <span className="hl-bracket">{`{`}</span> <br />
+          <div style={{ marginLeft: "20px" }}>
+            <span className="hl hl-value">transform: rotate(360deg);</span>
+          </div>
+          <span
+            className="hl-bracket"
+            style={{ marginLeft: "8px" }}
+          >{`}`}</span>{" "}
+          <br />
+          <span className="hl-bracket">{`}`}</span> <br />
         </div>
-        <span className="hl-bracket">{`}`}</span>
       </div>
     </div>
   );
@@ -76,13 +80,35 @@ border-radius: 50%;
 border-left:none;
 border-bottom:none;
 border-right: 2px solid transparent;
-animation: spinner6 700ms linear infinite;
+animation: spinner5 700ms linear infinite;
 }
-@keyframes spinner6 {
+@keyframes spinner5 {
 	to {
 		transform: rotate(360deg);
 	}
 }
 `;
 
-export { spinner5, spinner5Style };
+const spinner5HtmlVariable = `<button></button>`;
+
+const spinner5CssVariable = `
+button {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 50%;
+  border-top: 2px solid #1D9AF2;
+  border-right: 2px solid transparent;
+  border-bottom:none;
+  border-left:none;
+  animation: spinner5 700ms linear infinite;
+}
+
+@keyframes spinner5 {
+    to {
+      transform: rotate(360deg);
+    }
+}
+`;
+
+export { spinner5, spinner5Style, spinner5HtmlVariable, spinner5CssVariable };

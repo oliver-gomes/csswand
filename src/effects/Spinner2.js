@@ -29,7 +29,7 @@ const spinner2 = () => {
           <span className="hl hl-value"> 40px;</span>
           <br />
           <span className="hl hl-property">background: </span>
-          <span className="hl hl-value"> #151825;</span>
+          <span className="hl hl-value"> rgba(0, 0, 0, 0.2);</span>
           <br />
           <span className="hl hl-property"> border-radius:</span>
           <span className="hl hl-value"> 50%;</span>
@@ -41,7 +41,7 @@ const spinner2 = () => {
           <span className="hl hl-value"> #fff;</span>
           <br />
           <span className="hl hl-property">animation: </span>
-          <span className="hl hl-value">spinner1 600ms linear infinite;</span>
+          <span className="hl hl-value">spinner2 600ms linear infinite;</span>
           <br />
           <span className="hl-bracket">{`}`}</span> <br />
         </div>

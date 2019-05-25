@@ -55,10 +55,30 @@ import {
   spinner1HtmlVariable,
   spinner1CssVariable
 } from "../../effects/Spinner1";
-import { spinner2, spinner2Style } from "../../effects/Spinner2";
-import { spinner3, spinner3Style } from "../../effects/Spinner3";
-import { spinner4, spinner4Style } from "../../effects/Spinner4";
-import { spinner5, spinner5Style } from "../../effects/Spinner5";
+import {
+  spinner2,
+  spinner2Style,
+  spinner2HtmlVariable,
+  spinner2CssVariable
+} from "../../effects/Spinner2";
+import {
+  spinner3,
+  spinner3Style,
+  spinner3HtmlVariable,
+  spinner3CssVariable
+} from "../../effects/Spinner3";
+import {
+  spinner4,
+  spinner4Style,
+  spinner4HtmlVariable,
+  spinner4CssVariable
+} from "../../effects/Spinner4";
+import {
+  spinner5,
+  spinner5Style,
+  spinner5HtmlVariable,
+  spinner5CssVariable
+} from "../../effects/Spinner5";
 
 const RadioGroup = Radio.Group;
 
@@ -271,7 +291,13 @@ export default class EffectBoard extends Component {
                 : null
             }`}
           >
-            <SingleEffect Style={spinner2Style} Code={spinner2()} />
+            <SingleEffect
+              cssVariable={spinner2CssVariable}
+              htmlVariable={spinner2HtmlVariable}
+              Style={spinner2Style}
+              Code={spinner2()}
+              Title="Spinner"
+            />
           </div>
           <div
             className={`column-space ${
@@ -282,7 +308,13 @@ export default class EffectBoard extends Component {
                 : null
             }`}
           >
-            <SingleEffect Style={spinner3Style} Code={spinner3()} />
+            <SingleEffect
+              cssVariable={spinner3CssVariable}
+              htmlVariable={spinner3HtmlVariable}
+              Style={spinner3Style}
+              Code={spinner3()}
+              Title="Spinner"
+            />
           </div>
           <div
             className={`column-space ${
@@ -295,7 +327,13 @@ export default class EffectBoard extends Component {
                   `
             }`}
           >
-            <SingleEffect Style={spinner4Style} Code={spinner4()} />
+            <SingleEffect
+              cssVariable={spinner4CssVariable}
+              htmlVariable={spinner4HtmlVariable}
+              Style={spinner4Style}
+              Code={spinner4()}
+              Title="Spinner"
+            />
           </div>
           <div
             className={`column-space ${
@@ -306,7 +344,13 @@ export default class EffectBoard extends Component {
                 : null
             }`}
           >
-            <SingleEffect Style={spinner5Style} Code={spinner5()} />
+            <SingleEffect
+              cssVariable={spinner5CssVariable}
+              htmlVariable={spinner5HtmlVariable}
+              Style={spinner5Style}
+              Code={spinner5()}
+              Title="Spinner"
+            />
           </div>
         </div>
       </>
