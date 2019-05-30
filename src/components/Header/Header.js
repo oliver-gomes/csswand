@@ -24,8 +24,8 @@ export default function HeaderNew() {
 
         <div className="item3">
           <TwitterShareButton
-            url={"https://github.com/oliver-gomes"}
-            options={{ text: "#csswand is awesome" }}
+            url={"https://github.com/oliver-gomes/csswand/"}
+            options={{ text: "#csswand is awesome tool, check it out" }}
           />
         </div>
       </div>
