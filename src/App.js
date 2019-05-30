@@ -23,7 +23,7 @@ function App() {
           Welcome to
         </p>
         <br />
-        <img src={cssLetter} alt="css gradient image" width="250" />
+        <img src={cssLetter} alt="css gradient" width="250" />
         <p
           className={css`
             margin: 0;
