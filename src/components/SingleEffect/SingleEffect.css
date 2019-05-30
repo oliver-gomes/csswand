@@ -1,58 +1,60 @@
 .ant-modal-header {
-    border-bottom: 1px solid #1D9AF2
+  border-bottom: 1px solid #1d9af2;
 }
 
 .ant-modal-content,
 .ant-modal-header {
-    font-family: 'Fira Sans', sans-serif;
-    background-color: #292D3E;
-    color: #fff
+  font-family: "Fira Sans", sans-serif;
+  background-color: rgb(19, 25, 51);
+  color: #fff;
 }
 
 .ant-modal-body p,
 .ant-modal-title {
-    color: #fff
+  color: #fff;
 }
 
 .ant-modal-footer {
-    border-top: 1px solid #1D9AF2
+  border-top: 1px solid #1d9af2;
 }
 
 .ant-btn-ghost {
-    background-color: none;
-    border-color: #1D9AF2;
-    color: #1D9AF2;
-
+  background-color: none;
+  border-color: #1d9af2;
+  color: #1d9af2;
 }
 
-
 .hl {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
 }
 
 .hl-bracket {
-    color: #6bc8f8
+  color: #6bc8f8;
 }
 
 .hl-class {
-    color: #c9a067
+  color: #c9a067;
 }
 
 .hl-attribute {
-    color: #FF5572
+  color: #ff5572;
 }
 
 .hl-property {
-    color: #7FC9C2
+  color: #7fc9c2;
 }
 
 .hl-value {
-    color: #ae81ff
+  color: #ae81ff;
 }
 
 transition: all 0.2s ease-in-out !important;
 
 &:hover {
-    transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
+}
+
+.ant-modal-close-x {
+  color: white;
 }

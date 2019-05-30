@@ -5,7 +5,13 @@ const rotate = () => {
   return (
     <div className="hl">
       <p style={{ color: "#fff", fontSize: "26px;" }}>HTML </p>
-      <div style={{ backgroundColor: "#262A39" }}>
+      <div
+        style={{
+          backgroundColor: "rgb(12, 17, 39)",
+          padding: "10px",
+          borderRadius: "10px"
+        }}
+      >
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-attribute">{`button`}</span>
         <span className="hl-bracket">{`>`}</span>
@@ -18,7 +24,13 @@ const rotate = () => {
       <br />
       <br />
       <p style={{ color: "#fff", fontSize: "26px;" }}>CSS</p>
-      <div style={{ backgroundColor: "#262A39" }}>
+      <div
+        style={{
+          backgroundColor: "rgb(12, 17, 39)",
+          padding: "10px",
+          borderRadius: "10px"
+        }}
+      >
         <span className="hl-attribute">{`button `}</span>
         <span className="hl-bracket">{`{`}</span> <br />
         <div style={{ marginLeft: "20px" }}>
