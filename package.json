@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^3.17.0",
     "emotion": "^10.0.9",
+    "firebase-tools": "^6.10.0",
     "react": "^16.8.6",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
