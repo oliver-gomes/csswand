@@ -31,6 +31,4 @@ $ npm start
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Read our contributing guide sand let's build a better antd together.
-
-We welcome all contributions.
+I am taking request for more CSS effect, if you have any awesome idea feel free to open an issue stating that CSS effect. I will add it to the app asap. Thanks!
