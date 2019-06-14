@@ -1,3 +1,4 @@
+<h1>CSS Wand</h1>
 <p align="center">
   <a href="http://ant.design">
     <img width="400" src="https://github.com/oliver-gomes/csswand/blob/master/src/csswand.png?raw=true">
@@ -9,10 +10,11 @@
   <a href="https://www.producthunt.com/posts/css-wand?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-css-wand" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=158372&theme=light&period=daily" alt="CSS Wand - Easy copy-paste beautiful CSS animations | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
 </p>
 
-<h1 align="center">CSS Wand</h1>
+
 
 <div align="center">
-Hover your wand and use your magic spell to copy beautiful css
+<p>Hover your wand and use your magic spell to copy beautiful css</p>
+
 </div>
 
 <img width="1000" src="https://github.com/oliver-gomes/csswand/blob/master/public/github-bg.png?raw=true" style="border-radius: 10px">
