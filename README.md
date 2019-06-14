@@ -4,6 +4,10 @@
   </a>
 </p>
 
+<p align="center">
+ <a href="https://www.producthunt.com/posts/css-wand?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-css-wand" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=158372&theme=light" alt="CSS Wand - Easy copy-paste beautiful CSS animations | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+</p>
+
 <h1 align="center">CSS Wand</h1>
 
 <div align="center">
