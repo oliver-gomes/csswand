@@ -46,24 +46,24 @@
 } */
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-  grid-gap: 5px;
-  max-width: 1280px;
-  margin: 0 auto;
-  /* grid-column-gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    grid-gap: 5px;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* grid-column-gap: 10px; */
 }
 
 .grid div {
-  display: flex;
-  /* width: 200px; */
-  margin: 20px 0;
-  align-items: center;
-  justify-content: center;
-  /* background-color: red; */
+    display: flex;
+    /* width: 200px; */
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .grid-radio {
-  display: grid;
-  margin: 100px auto 100px auto;
+    display: grid;
+    margin: 50px auto 100px auto;
 }
