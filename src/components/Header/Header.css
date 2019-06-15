@@ -1,14 +1,31 @@
+.header-main {
+    display: grid;
+    grid-auto-columns: 1fr 200px;
+}
+
 .grid-header {
-  padding-top: 100px;
-  display: grid;
-  min-height: 100px;
-  grid-auto-flow: column;
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    padding-top: 20px;
 }
 
 .item2 {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  grid-auto-flow: column;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+.product-header {
+    display: block;
+    min-height: 50px;
+}
+
+
+@media (max-width: 576px) {
+    .product-header {
+        display: none;
+    }
 }
