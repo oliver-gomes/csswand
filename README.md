@@ -17,7 +17,7 @@
 
 <img width="1000" src="https://github.com/oliver-gomes/csswand/blob/master/public/github-bg.png?raw=true" style="border-radius: 10px">
 
-<img  width="470"  src="https://github.com/oliver-gomes/csswand/blob/master/public/colorpicker.png?raw=true"  style="border-radius: 10px"/> <img  width="470"  src="https://github.com/oliver-gomes/csswand/blob/master/public/csspicker.png?raw=true"  style="border-radius: 10px"/>
+<img  width="400"  src="https://github.com/oliver-gomes/csswand/blob/master/public/colorpicker.png?raw=true"  style="border-radius: 10px"/> <img  width="400"  src="https://github.com/oliver-gomes/csswand/blob/master/public/csspicker.png?raw=true"  style="border-radius: 10px"/>
 
 ## ✨ Features
 
