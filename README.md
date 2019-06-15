@@ -22,7 +22,7 @@
 ## ✨ Features
 
 - Easy Copy-Paste Beautiful CSS.
-- Amazing built-in color picker
+- Amazing Built-in Color Picker
 - Includes Hover, Loading and more effects.
 
 ## ⌨️ Development
