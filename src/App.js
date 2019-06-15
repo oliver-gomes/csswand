@@ -5,6 +5,7 @@ import EffectBoard from "./components/EffectBoard/EffectBoard";
 
 import { css } from "emotion";
 import cssLetter from "./css-letter.png";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
           That can be easily customized further at your own choice
         </p>
       </div>
+
+      <ColorPicker />
 
       <EffectBoard />
     </div>
