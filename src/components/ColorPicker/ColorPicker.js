@@ -44,6 +44,19 @@ export default class ColorPicker extends Component {
           onClick={this.showModal}
           style={{ marginTop: "40px", cursor: "pointer", color: "#24ff9f" }}
         />
+        <span
+          style={{
+            marginLeft: "20px",
+            cursor: "pointer",
+            color: "#24ff9f"
+          }}
+        >
+          <i
+            class="fas fa-long-arrow-alt-left"
+            style={{ marginRight: "5px" }}
+          />
+          New Feature!
+        </span>
 
         <Modal
           title="CSS Wand Color Picker"
