@@ -15,7 +15,7 @@ const pressDown = () => {
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-attribute">{`button`}</span>
         <span className="hl-bracket">{`>`}</span>
-        <span>{`Rotate`}</span>
+        <span>{`Press Down`}</span>
         <span className="hl-bracket">{`<`}</span>
         <span className="hl-bracket">{`/`}</span>
         <span className="hl-attribute">{`button `}</span>
