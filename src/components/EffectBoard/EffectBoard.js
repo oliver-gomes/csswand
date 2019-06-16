@@ -79,6 +79,12 @@ import {
   spinner5HtmlVariable,
   spinner5CssVariable
 } from "../../effects/Spinner5";
+import {
+  pressDown,
+  pressDownStyle,
+  pressDownHtmlVariable,
+  pressDownCssVariable
+} from "../../effects/PressDown";
 
 const RadioGroup = Radio.Group;
 
@@ -133,6 +139,7 @@ export default class EffectBoard extends Component {
             </Radio> */}
           </RadioGroup>
         </div>
+
         {/* Row 1 */}
         <div className={`grid`}>
           <div
@@ -265,6 +272,14 @@ export default class EffectBoard extends Component {
               Title="Swing"
             />
           </div>
+
+          <SingleEffect
+            cssVariable={pressDownCssVariable}
+            htmlVariable={pressDownHtmlVariable}
+            Style={pressDownStyle}
+            Code={pressDown()}
+            Title="Press Down"
+          />
           <div
             className={`column-space ${
               this.state.value === 2
@@ -282,6 +297,7 @@ export default class EffectBoard extends Component {
               Title="Spinner"
             />
           </div>
+
           <div
             className={`column-space ${
               this.state.value === 2
