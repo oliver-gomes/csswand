@@ -63,3 +63,65 @@ transition: all 0.2s ease-in-out !important;
 input {
     color: black;
 }
+
+
+
+
+
+
+/* Input Effects Start Here*/
+
+:focus {
+    outline: none;
+}
+
+.col-3 {
+    float: left;
+    width: 27.33%;
+    margin: 40px 3%;
+    position: relative;
+}
+
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #1d9af2;
+    width: 70%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background-color: rgb(19, 23, 44)
+}
+
+.effect-1,
+.effect-2,
+.effect-3 {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.effect-1~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+
+.effect-1:focus~.focus-border {
+    width: 70%;
+    transition: 0.4s;
+}
+
+.input-top {
+    padding: 15px;
+}
+
+.input-top:hover {
+    cursor: pointer;
+    background-color: rgb(19, 25, 51);
+}
