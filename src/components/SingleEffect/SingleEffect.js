@@ -33,13 +33,29 @@ export default class SingleEffect extends Component {
     console.log(this.props.Code);
     return (
       <div>
-        <Button
-          type="ghost"
-          className={this.props.Style}
+        <div
           onClick={this.showModal}
+          className={this.props.Title === "Input" ? "input-top" : null}
         >
-          {this.props.Title === "Spinner" ? null : this.props.Title}
-        </Button>
+          {this.props.Title === "Input" ? (
+            <div className="col-3" onClick={event => event.stopPropagation()}>
+              <input
+                className="effect-1"
+                type="text"
+                placeholder="Input Underline"
+              />
+              <span className="focus-border" />
+            </div>
+          ) : (
+            <Button
+              type="ghost"
+              className={this.props.Style}
+              onClick={this.showModal}
+            >
+              {this.props.Title === "Spinner" ? null : this.props.Title}
+            </Button>
+          )}
+        </div>
 
         <Modal
           title={this.props.Title}
@@ -102,47 +118,88 @@ export default class SingleEffect extends Component {
           >
             {this.state.copiedCSS ? (
               <span
-                className={css`
-                  @keyframes fade-in-right {
-                    from {
-                      opacity: 0;
-                      transform: translateX(-15px);
-                    }
-                    to {
-                      opacity: 1;
-                      transform: translateX(0);
-                    }
-                  }
+                className={
+                  this.props.Title === "Input"
+                    ? css`
+                        @keyframes fade-in-right {
+                          from {
+                            opacity: 0;
+                            transform: translateX(-15px);
+                          }
+                          to {
+                            opacity: 1;
+                            transform: translateX(0);
+                          }
+                        }
 
-                  @keyframes grow-left {
-                    from {
-                      transform: scaleX(0);
-                    }
-                    to {
-                      transform: scaleX(1);
-                    }
-                  }
-                  opacity: 0;
-                  animation: fade-in-right ease 0.4s forwards;
-                  float: right;
-                  color: #1d9af2;
-                  position: absolute;
-                  top: 210px;
-                  right: 25px;
-                `}
+                        @keyframes grow-left {
+                          from {
+                            transform: scaleX(0);
+                          }
+                          to {
+                            transform: scaleX(1);
+                          }
+                        }
+                        opacity: 0;
+                        animation: fade-in-right ease 0.4s forwards;
+                        float: right;
+                        color: #1d9af2;
+                        position: absolute;
+                        top: 330px;
+                        right: 25px;
+                      `
+                    : css`
+                        @keyframes fade-in-right {
+                          from {
+                            opacity: 0;
+                            transform: translateX(-15px);
+                          }
+                          to {
+                            opacity: 1;
+                            transform: translateX(0);
+                          }
+                        }
+
+                        @keyframes grow-left {
+                          from {
+                            transform: scaleX(0);
+                          }
+                          to {
+                            transform: scaleX(1);
+                          }
+                        }
+                        opacity: 0;
+                        animation: fade-in-right ease 0.4s forwards;
+                        float: right;
+                        color: #1d9af2;
+                        position: absolute;
+                        top: 210px;
+                        right: 25px;
+                      `
+                }
               >
                 Copied
               </span>
             ) : (
               <Icon
                 type="copy"
-                className={css`
-                  float: right;
-                  font-size: 26px;
-                  position: absolute;
-                  top: 210px;
-                  right: 25px;
-                `}
+                className={
+                  this.props.Title === "Input"
+                    ? css`
+                        float: right;
+                        font-size: 26px;
+                        position: absolute;
+                        top: 330px;
+                        right: 25px;
+                      `
+                    : css`
+                        float: right;
+                        font-size: 26px;
+                        position: absolute;
+                        top: 210px;
+                        right: 25px;
+                      `
+                }
               />
             )}
           </CopyToClipboard>
