@@ -92,6 +92,13 @@ import {
   input1CssVariable
 } from "../../effects/Input1";
 
+import {
+  ripple,
+  rippleStyle,
+  rippleHtmlVariable,
+  rippleCssVariable
+} from "../../effects/Ripple";
+
 const RadioGroup = Radio.Group;
 
 export default class EffectBoard extends Component {
@@ -275,6 +282,23 @@ export default class EffectBoard extends Component {
               Style={swingStyle}
               Code={swing()}
               Title="Swing"
+            />
+          </div>
+          <div
+            className={`column-space ${
+              this.state.value === 3
+                ? css`
+                    display: none !important ;
+                  `
+                : null
+            }`}
+          >
+            <SingleEffect
+              cssVariable={rippleCssVariable}
+              htmlVariable={rippleHtmlVariable}
+              Style={rippleStyle}
+              Code={ripple()}
+              Title="Ripple"
             />
           </div>
           <div
