@@ -86,12 +86,11 @@ import {
   pressDownCssVariable
 } from "../../effects/PressDown";
 
-// import {
-//   input1,
-//   input1Style,
-//   input1HtmlVariable,
-//   input1CssVariable
-// } from "../../effects/Input1";
+import {
+  input1,
+  input1HtmlVariable,
+  input1CssVariable
+} from "../../effects/Input1";
 
 const RadioGroup = Radio.Group;
 
@@ -259,7 +258,6 @@ export default class EffectBoard extends Component {
               Title="Shadow"
             />
           </div>
-
           {/* Row 2 */}
           {/* <div className="grid mt-5"> */}
           <div
@@ -279,7 +277,6 @@ export default class EffectBoard extends Component {
               Title="Swing"
             />
           </div>
-
           <div
             className={`column-space ${
               this.state.value === 2 || this.state.value === 3
@@ -297,22 +294,23 @@ export default class EffectBoard extends Component {
               Title="Press Down"
             />
           </div>
-//           <div
-//             className={`column-space ${
-//               this.state.value === 2 || this.state.value === 3
-//                 ? css`
-//                     display: none !important ;
-//                   `
-//                 : null
-//             }`}
-//           >
-//             <SingleEffect
-//               cssVariable={input1CssVariable}
-//               htmlVariable={input1HtmlVariable}
-//               Code={input1()}
-//               Title="Input"
-//             />
-//           </div>
+
+          <div
+            className={`column-space ${
+              this.state.value === 2 || this.state.value === 3
+                ? css`
+                    display: none !important ;
+                  `
+                : null
+            }`}
+          >
+            <SingleEffect
+              cssVariable={input1CssVariable}
+              htmlVariable={input1HtmlVariable}
+              Code={input1()}
+              Title="Input"
+            />
+          </div>
           <div
             className={`column-space ${
               this.state.value === 2
@@ -330,7 +328,6 @@ export default class EffectBoard extends Component {
               Title="Spinner"
             />
           </div>
-
           <div
             className={`column-space ${
               this.state.value === 2
