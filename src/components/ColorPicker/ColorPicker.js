@@ -55,7 +55,7 @@ export default class ColorPicker extends Component {
             class="fas fa-long-arrow-alt-left"
             style={{ marginRight: "5px" }}
           />
-          New Feature!
+          Color Picker
         </span>
 
         <Modal
