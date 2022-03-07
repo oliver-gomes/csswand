@@ -46,14 +46,14 @@ export default class ColorPicker extends Component {
         />
         <span
           style={{
-            marginLeft: "20px",
+            marginLeft: "15px",
             cursor: "pointer",
             color: "#24ff9f"
           }}
         >
           <i
             class="fas fa-long-arrow-alt-left"
-            style={{ marginRight: "5px" }}
+            style={{ marginRight: "10px" }}
           />
           Color Picker
         </span>
